@@ -23,6 +23,7 @@ gem 'cancancan'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'figaro'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

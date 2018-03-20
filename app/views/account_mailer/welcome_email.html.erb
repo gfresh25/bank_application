@@ -1,0 +1,11 @@
+<h1>Welcome to ThePeoplesBank.com, <%= @user.first_name %></h1>
+<p>
+	You have successfully created an account at The Peoples Bank. Your money is "safe" with us!
+	<div>
+	<p>Your login info is as follows: </p>
+</p>
+
+<p>Account Number: <%= @account.id %></p>
+<p>Initial Balance: <%= @account.balance %> </p>
+<p>To view more info, please visit your PeoplesBank Account Dashboard at <%= @url %>. We look forward to doing "business" with you.</p>
+</div>
