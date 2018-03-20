@@ -1,4 +1,9 @@
 <h1>Welcome to your Dashboard, <%= current_user.first_name %> </h1>
+
+
+<p><%= notice %> </p>
+
+
 <p>Here are your accounts at a glance</p>
 
 <table class='table'>
@@ -26,7 +31,7 @@
 	      	<% end %> 
         <td><%= number_to_currency account.balance %></td>
         <td><%= account.account_type %></td>
-        <td><%= link_to 'Show', account %></td>
+        <td><%= link_to 'Show', account, class: 'btn btn-sm btn-info' %></td>
       </tr>
     <% end %>
   </tbody>
