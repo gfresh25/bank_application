@@ -31,9 +31,9 @@
 </p>
 
 <% if current_user.role == 'client' %> 
-<p><%= link_to 'Make A Deposit', deposit_path(id: @account.id) %>
- | <%= link_to "Make a Withdrawal", withdrawal_path(id: @account.id) %>
- | <%= link_to 'Back to Dashboard', root_path %></p>
+<p><%= link_to 'Make A Deposit', deposit_path(id: @account.id), class: 'btn btn-info' %>
+ | <%= link_to "Make a Withdrawal", withdrawal_path(id: @account.id), class: 'btn btn-info' %>
+ |<%= link_to 'Make a Transfer', transfer_path(id: @account.id), class: 'btn btn-success btn-lg' %> </p>
  <% end %> 
 
 
@@ -69,3 +69,5 @@
     <% end %>
   </tbody>
 </table>
+
+<%= link_to 'Back to Dashboard', root_path, class: 'btn btn-info'%>
